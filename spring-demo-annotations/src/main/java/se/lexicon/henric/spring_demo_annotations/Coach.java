@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 public interface Coach {
 
-	public String GetDailyWorkout();
+	public String getDailyWorkout();
+	public String getDailyFortune();
 	
 }
