@@ -2,7 +2,7 @@ package se.lexicon.henric.spring_demo_annotations;
 
 import org.springframework.stereotype.Component;
 
-@Component("thatSillyCoach")
+@Component
 public class TennisCoach implements Coach {
 
 	public String GetDailyWorkout() {
