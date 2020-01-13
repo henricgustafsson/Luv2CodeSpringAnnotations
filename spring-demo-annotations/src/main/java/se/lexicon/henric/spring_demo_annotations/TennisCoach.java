@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 
+	@Autowired
 	private FortuneService fortuneService;
 	
 	public TennisCoach() {
@@ -34,8 +35,8 @@ public class TennisCoach implements Coach {
 	}
 
 	//setter for field FortuneService fortuneService
-	@Autowired
-	public void doSomeCrazyStuff(FortuneService fortuneService) {
-		this.fortuneService = fortuneService;
-	}
+//	@Autowired
+//	public void doSomeCrazyStuff(FortuneService fortuneService) {
+//		this.fortuneService = fortuneService;
+//	}
 }
