@@ -19,9 +19,9 @@ public class App
     	System.out.println(theSwimCoach.getDailyWorkout());
     	//call a method on the bean
     	System.out.println(theSwimCoach.getDailyFortune());
-    	
+    	//get email injected from sport.properties
     	System.out.println(theSwimCoach.getEmail());
-    	
+    	//get team injected from sport.properties
     	System.out.println(theSwimCoach.getTeam());
     	//close the context
     	context.close();
