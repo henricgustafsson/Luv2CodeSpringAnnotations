@@ -35,7 +35,7 @@ public class TennisCoach implements Coach {
 
 	//setter for field FortuneService fortuneService
 	@Autowired
-	public void setFortuneService(FortuneService fortuneService) {
+	public void doSomeCrazyStuff(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
 }
