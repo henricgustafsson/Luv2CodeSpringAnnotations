@@ -13,7 +13,15 @@ public class App
     	//read spring config file
     	ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
     	//get the bean from spring container
-    	//Coach theCoach = context.getBean("tennisCoach",Coach.class);
+    	Coach theCoach = context.getBean("tennisCoach",Coach.class);
+    	//call a method to get the daily fortune
+    	System.out.println(theCoach.getDailyWorkout());
+    	//call a method on the bean
+    	System.out.println(theCoach.getDailyFortune());
+    	//close the context
+    	context.close(); 
+    	
+    	/** 
     	SwimCoach theSwimCoach = (SwimCoach) context.getBean("swimCoach",Coach.class);
     	//call a method to get the daily fortune
     	System.out.println(theSwimCoach.getDailyWorkout());
@@ -22,9 +30,9 @@ public class App
     	//get email injected from sport.properties
     	System.out.println(theSwimCoach.getEmail());
     	//get team injected from sport.properties
-    	System.out.println(theSwimCoach.getTeam());
+    	System.out.println(theSwimCoach.getTeam());*/
     	//close the context
-    	context.close();
+    	//context.close(); 
     	
     }
 }
