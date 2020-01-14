@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 public class SwimCoach implements Coach {
 
 	
-	@Autowired
-	@Qualifier("randomFortuneService")
+	//@Autowired
+	//@Qualifier("sadFortuneService")
 	private FortuneService fortuneService;
 	
 	@Autowired
@@ -21,7 +21,8 @@ public class SwimCoach implements Coach {
 	@Value("${foo.team}")
 	private String team;
 
-	public SwimCoach() {
+	public SwimCoach(FortuneService fortuneService2) {
+		fortuneService = fortuneService2;
 		// TODO Auto-generated constructor stub
 	}
 	public String getEmail() {
